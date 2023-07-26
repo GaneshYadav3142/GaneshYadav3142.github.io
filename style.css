@@ -63,7 +63,7 @@ section {
 }
 
 .navbar a:hover,
-.navbar a.nav-link.home {
+.navbar a.active {
     color : var(--main-color)
 }
 
@@ -79,7 +79,7 @@ section {
     align-items: center;
 }
 
-.home-img img {
+.home-img1 img {
     width:35vw
 }
 
@@ -146,7 +146,7 @@ span {
     box-shadow: none;
 }
 
-.about  {
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
