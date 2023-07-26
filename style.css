@@ -55,7 +55,7 @@ section {
     cursor: default;
 }
 
-.navbar {
+.navbar a{
     font-size: 1.7rem;
     color : var(--text-color);
     margin-left: 4rem;
@@ -63,7 +63,7 @@ section {
 }
 
 .navbar a:hover,
-.navbar a.active {
+.navbar a.nav-link {
     color : var(--main-color)
 }
 
@@ -79,7 +79,7 @@ section {
     align-items: center;
 }
 
-.home-img {
+.home-img img {
     width:35vw
 }
 
@@ -120,7 +120,7 @@ span {
     font-size: 2rem;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
-    transition: 5s ease;
+    transition: .5s ease;
 }
 
 .social-media a:hover {
@@ -146,7 +146,7 @@ span {
     box-shadow: none;
 }
 
-.about {
+.about  {
     display: flex;
     justify-content: center;
     align-items: center;
