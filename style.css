@@ -243,10 +243,39 @@ span {
 }
 
 
-/* skills */
+
+ 
+  .grid-list {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  /* Centers items horizontally */
+    grid-gap: 20px; /* Adjust the gap between items */
+    align-items: center;
+    padding: 50px 50px;
+  }
+
+  /* Optional: Set a maximum width for each skills card */
+  .skills-card {
+    max-width: 150px; /* Adjust the max-width as needed */
+    text-align: center; /* Centers the content within each card */
+    padding-top: 20px;
+    
+  }
+
+  /* Optional: Add some styling to the images within the skills card */
+  .skills-card-img {
+    width: 100%;
+    height: auto;
+  }
 
 
-/* #skills h2 {
+
+  /* Optional: Add some styling to the skills card names */
+  .skills-card-name {
+    font-weight: bold;
+  }
+
+  #skills h2 {
     margin-bottom: 5rem;
   }
   .skills-container {
@@ -271,52 +300,18 @@ span {
     border-color: var(--bg-carolina-blue);
     transform: scale(1.02);
   } 
-  /* .skills-card-1 i {
+  .skills-card-1 i {
     font-size: 7rem;
     color: var(--bg-carolina-blue);
-  /* } */
-  /* .skills-card-1 h3 {
+  }
+  .skills-card-1 h3 {
     font-size: 2.6rem;
   
   }
   .skills-card-1 p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
-  } */ */ */
-  
-#skills {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
-
-  .grid-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* justify-content: center; */
-    align-items: center;
-    gap: 20px;
-    margin-top: 50px;
-    /* border: 1px solid white; */
-  }
-  
-  .grid-list img {
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    /* border: 1px solid white; */
-    margin-left: 25%;
-  }
-  
-  .grid-list p {
-    text-align: center;
-    /* border: 1px solid white; */
-  }
-  /* .grid-list>div {
-      border: 1px solid red;
-  } */
-
 
   .contact {
     color: var(--bg-prussian-blue);
@@ -329,6 +324,7 @@ span {
     margin-top: 10px;
     width: 50%;
     margin: auto;
+    padding-top: 20px;
   }
   #contact .contact_me p {
      font-size: large;
@@ -339,6 +335,7 @@ span {
     
     margin: auto;
     width: 20%;
+   
   }
   .contact form {
     max-width: 70rem;
@@ -372,6 +369,12 @@ span {
   .contact form .btn {
     margin-top: 2rem;
     cursor: pointer;
+  }
+
+  .div {
+    display: flex;
+    justify-content: space-between;
+    gap:10px
   }
 
 
