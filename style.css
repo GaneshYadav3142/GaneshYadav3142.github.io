@@ -63,7 +63,7 @@ section {
 }
 
 .navbar a:hover,
-.navbar a.active {
+.navbar a.nav-link.home {
     color : var(--main-color)
 }
 
