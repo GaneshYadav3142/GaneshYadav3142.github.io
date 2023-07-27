@@ -163,7 +163,7 @@ span {
     box-shadow: none;
 }
 
-.about-section {
+.about.section {
     display: flex;
     justify-content: center;
     align-items: center;
