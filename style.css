@@ -259,7 +259,12 @@ span {
     max-width: 150px; /* Adjust the max-width as needed */
     text-align: center; /* Centers the content within each card */
     padding-top: 20px;
-    
+    z-index:0
+  }
+  
+  .skills-card:hover {
+    box-shadow: rgba(162, 176, 187, 0.407) 0px 5px 15px;;
+    z-index:4
   }
 
   /* Optional: Add some styling to the images within the skills card */
@@ -378,4 +383,25 @@ span {
   }
 
 
+
   /* github */
+/* #github-streak-stats,#github-stats-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+} */
+
+/* #github-top-langs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+} */
+
+.react-activity-calendar {
+ 
+  /* //justify-content: center; */
+  text-align: center;
+  margin: 20px;
+}
