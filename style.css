@@ -373,3 +373,18 @@ span {
     margin-top: 2rem;
     cursor: pointer;
   }
+
+
+  /* github */
+#github-stats {
+    margin-bottom: 70px;
+  }
+  #resume-button-2 {
+    list-style: none;
+  }
+  
+  #github-stats {
+    justify-content: center;
+  }
+
+  /* github */
