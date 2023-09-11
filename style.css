@@ -67,6 +67,13 @@ section {
     color : var(--main-color)
 }
 
+/* responsive div should be display none at normal desktop */
+
+#myTopnav {
+  display: none;
+}
+
+
 #menu-icon {
     font-size: 3.6rem;
     color:var(--text-color);
@@ -77,10 +84,15 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+   gap: 20px;
 }
 
 .home-img1 img {
     width:35vw
+}
+
+.home-img{
+  opacity: 70%;
 }
 
 .home-content h3 {
@@ -164,16 +176,23 @@ span {
 }
 
 .about.section {
+ 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 5rem;
     background: var(--second-bg-color);
+   
 }
 
 .about-img img {
-    width: 35vw;
+    width: 30vw;
 }
+
+.about-img{
+  opacity: 70%;
+}
+
 
 .heading {
     text-align: center;
@@ -190,7 +209,7 @@ span {
 }
 
 .about-content p {
-    font-size: 1.6rem;
+    font-size: 2.0rem;
     margin: 2rem 0 3rem;
 }
 
@@ -384,27 +403,12 @@ span {
   }
 
 
-
-  /* github */
-/* #github-streak-stats,#github-stats-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-} */
-
-/* #github-top-langs{
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-} */
-
 .react-activity-calendar {
  
   /* //justify-content: center; */
   text-align: center;
   padding: 20px 10px;
+ 
 }
 
 .react-activity-calendar>div {
@@ -416,4 +420,188 @@ span {
 
 //Responsive ness// */
 
+@media screen and (max-width: 768px) and (min-width: 486px) {
 
+/* Navbar Section */
+
+#nav-menu {
+  display: none;
+}
+
+
+  /* Home Section */
+
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.home-img1 img {
+  width:40vw
+}
+  /* About Section */
+
+  .about.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    
+}
+
+.about-img img {
+    width: 50vw;
+}
+
+.about-content  {
+    font-size: 1.8rem;
+    margin: 5%;
+}
+/* //Project Container// */
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:2rem ;
+   
+}
+
+/* skill Container */
+ .grid-list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  /* Centers items horizontally */
+    grid-gap: 20px; /* Adjust the gap between items */
+    align-items: center;
+    padding: 20px 20px;
+     margin-left: 10%;
+  }
+
+}
+
+@media screen and  (max-width: 486px) {
+
+  /* Navbar Section */
+
+  #nav-menu {
+    display: none;
+  }
+
+  /* Home Section */
+
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.home-img1 img {
+  width:45vw
+}
+
+
+
+ /* About Section */
+
+  .about.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    margin-left: 5%;
+}
+
+.about-img img {
+    width: 65vw;
+}
+
+
+.about-content  {
+    font-size: 1.8rem;
+    margin: 5%;
+}
+  /* project Container */
+
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:2rem 
+}
+
+/* Skill Container */
+ .grid-list {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    padding: 20px 20px;
+   margin-left: 100px;
+  }
+}
+
+
+
+/* Responsive navbar */
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: blue;
+}
+
+/* .topnav .icon {
+  display: none;
+} */
+
+@media screen and (max-width: 768px) {
+  #myTopnav{
+    display: block;
+  }
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #myTopnav{
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

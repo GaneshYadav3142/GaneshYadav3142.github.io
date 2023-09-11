@@ -4,15 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- box Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <!-- box Icons -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+       
 <header class="header" id="nav-menu">
 <a href="#" class="logo">Ganesh</a>
-<i class='bx bx-menu' id="menu-icon"></i>
+<!-- <i class='bx bx-menu' id="menu-icon"></i> -->
 <nav class="navbar"  >
 <a class="nav-link home" href="#home" >Home</a>
 <a class="nav-link about" href="#about"  >About</a>
@@ -25,6 +26,17 @@
 </span>
 </nav>
 </header>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
 
 <!-- home section design -->
 <section class="home-section" id="home">
@@ -233,8 +245,8 @@
   <div >
   <p>&nbsp;<img align="center" id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=ganeshyadav3142&theme=algolia&show_icons=true&locale=en" alt="ganeshyadav3142" /></p>
   </div>
-<div >
-  <p><img align="center" id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=ganeshyadav3142&theme=great-gatsby" alt="chetan791" /></p>
+<div>
+  <p><img align="center" id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=ganeshyadav3142&theme=great-gatsby" alt="ganeshyadav3142" /></p>
   </div>
 </div >
 <p><img align="cneter" id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs?username=ganeshyadav3142&theme=omni&show_icons=true&locale=en&layout=compact" alt="ganeshyadav3142" /></p>
@@ -275,6 +287,19 @@
   </section>
 
   <!-- contact section -->
+
+
+  <!-- <script src="index.js"></script> -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 
 </body>
 </html>
