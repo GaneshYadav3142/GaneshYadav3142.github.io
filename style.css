@@ -338,6 +338,17 @@ span {
     margin: 1rem 0 3rem;
   }
 
+
+  /* github stats section */
+
+  #github-streak-stats {
+    width: 450px;
+  }
+
+  #github-streak-card {
+    width: 450px;
+  }
+
   .contact {
     color: var(--bg-prussian-blue);
   }
@@ -428,6 +439,9 @@ span {
   display: none;
 }
 
+#myTopnav {
+  display: block;
+}
 
   /* Home Section */
 
@@ -488,6 +502,10 @@ span {
 
   #nav-menu {
     display: none;
+  }
+
+  #myTopnav {
+    display: block;
   }
 
   /* Home Section */
@@ -570,17 +588,15 @@ span {
 
 .topnav a.active {
   background-color: #04AA6D;
-  color: blue;
+  color: white;
 }
 
-/* .topnav .icon {
+.topnav .icon {
   display: none;
-} */
+}
 
 @media screen and (max-width: 768px) {
-  #myTopnav{
-    display: block;
-  }
+ 
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -588,11 +604,7 @@ span {
   }
 }
 
-@media screen and (max-width: 768px) {
-
-  #myTopnav{
-    display: block;
-  }
+@media screen and (max-width: 768px)  {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
