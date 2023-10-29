@@ -16,7 +16,7 @@ font-family: 'Poppins',sans-serif;
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: #0ef;
+    --main-color: #04AA6D;
 
 }
 
@@ -259,6 +259,21 @@ span {
 .project-card img {
     width: 100%;
     border-radius: 12px;
+}
+
+.project-images{
+  margin-left: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  width: 40%;
+padding-bottom: 3%;
+}
+
+.project-images div{
+  width: 35%;
+  
 }
 
 
@@ -587,7 +602,7 @@ span {
 }
 
 .topnav a.active {
-  background-color: #0ef;
+  background-color: #04AA6D;
   color: white;
 }
 
