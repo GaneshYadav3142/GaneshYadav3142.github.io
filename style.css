@@ -407,11 +407,16 @@ padding-bottom: 3%;
   /* github stats section */
 
   #github-stats-card {
-    width: 300px;
+    
+    width: 100%;
   }
 
   #github-streak-stats {
-    width: 300px;
+    width: 100%;
+  }
+
+  #github-top-langs{
+    width: 100%;
   }
 
   .contact {
@@ -609,16 +614,20 @@ textarea.input-field {
  
   /* //justify-content: center; */
   text-align: center;
-  padding: 20px 0px;
- 
+  padding: 20px 10px;
+
 }
+
 
 .react-activity-calendar>div {
-  /* //padding:10px; */
-  width:100px
+ 
+  width: 350px;
+ padding: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
 }
-
-
 /* 
 
 //Responsive ness// */
@@ -737,7 +746,7 @@ textarea.input-field {
     flex-direction: column;
     gap: 2rem;
     background: var(--second-bg-color);
-    margin-left: 5%;
+   
 }
 
 .about-img img {
@@ -763,7 +772,7 @@ textarea.input-field {
     grid-template-columns: repeat(1,1fr);
     align-items: center;
     padding: 20px 20px;
-   margin: auto;
+  margin-left: 50px;
   }
 
   /* Contact container */
