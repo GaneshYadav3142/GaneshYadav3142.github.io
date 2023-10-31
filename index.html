@@ -2,7 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Ganesh Yadav</title>
+    <title>Portfolio: Ganesh Yadav</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
     <!-- box Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -21,7 +22,7 @@
 <a class="nav-link skills" href="#skills" >Skills</a>
 <a  class="nav-link contact" href="#contact">Contact</a>
 <span id="resume-button-1" class="nav-link resume">
-  <a href="./images/Ganesh-Yadav-Resume (1).pdf" target="_blank" id="resume-link-1" download="Ganesh-Yadav-Resume">Resume
+  <a  onclick="downloadResume()" href="./images/Ganesh-Yadav-Resume (1).pdf" target="_blank" id="resume-link-1" download="Ganesh-Yadav-Resume">Resume
     <i class='bx bxs-download'></i></a>
 </span>
 </nav>
@@ -33,7 +34,7 @@
   <a href="#projects">Projects</a>
   <a href="#skills">Skills</a>
   <a href="#contact">Contact</a>
-  <a href="./images/Ganesh-Yadav-Resume (1).pdf" target="_blank" id="resume-link-1" download="Ganesh-Yadav-Resume">Resume
+  <a onclick="downloadResume()" href="./images/Ganesh-Yadav-Resume (1).pdf" target="_blank" id="resume-link-1" download="Ganesh-Yadav-Resume">Resume
     <i class='bx bxs-download'></i></a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -174,7 +175,7 @@
 <section id="skills" class="skills">
   
       <h2 class="heading">Skills &
-         <span>Abilities</span>
+         <span>Tools</span>
       </h2> 
 
       <div class="grid-list"> 
@@ -232,6 +233,11 @@
           <div  class="skills-card">
             <img class="skills-card-img" src="./images/npm.png"  alt="NPM" />
             <h1 class="skills-card-name">NPM</h1>
+          </div>
+
+          <div  class="skills-card">
+            <img class="skills-card-img" src="./images/netlify.png"  alt="Netlify" />
+            <h1 class="skills-card-name">Netlify</h1>
           </div>
         
           <div  class="skills-card">
@@ -439,7 +445,15 @@
         x.className = "topnav";
       }
     }
+   //Dowload resume function
+    function downloadResume() {
+  window.open(
+    "https://drive.google.com/file/d/1cgDqRyWa8oEsEzvGTfsCVZOv6r3d2g8z/view?usp=sharing",
+    "_blank"
+  );
+}
     </script>
+    
  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
