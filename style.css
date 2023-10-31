@@ -683,7 +683,7 @@ textarea.input-field {
     grid-gap: 20px; /* Adjust the gap between items */
     align-items: center;
     padding: 20px 20px;
-     margin-left: 10%;
+    margin: auto;
   }
 
   /* contact section */
