@@ -737,7 +737,7 @@ textarea.input-field {
     flex-direction: column;
     gap: 2rem;
     background: var(--second-bg-color);
-    margin-left: 5%;
+    
 }
 
 .about-img img {
@@ -763,7 +763,7 @@ textarea.input-field {
     grid-template-columns: repeat(1,1fr);
     align-items: center;
     padding: 20px 20px;
-   margin-right: 100px;
+   margin-right: 200px;
   }
 
   /* Contact container */
