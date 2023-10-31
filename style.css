@@ -763,7 +763,7 @@ textarea.input-field {
     grid-template-columns: repeat(1,1fr);
     align-items: center;
     padding: 20px 20px;
-   margin-right: 50px;
+   margin: auto;
   }
 
   /* Contact container */
